@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Maseno University</title>
+	<meta name="description" content="Example Website">
+	<meta name="author" content="www.example.com">
+	
+ 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+   
+  <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+   
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	<link rel="stylesheet" type="text/css" href="css/carousel.css" rel="stylesheet" type="text/css" >
+
+
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 960,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+
+ 
+<style>
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+        
+.custom-bullet li {
+    display: block;
+}
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\2192";
+    font-family: 'Glyphicons Halflings';
+    font-size: 12px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+	
+}
+		
+  </style>
+				
+ 
+    
+</head>
+<body>
+
+
+	<header> 
+		<div class="nav_list">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+
+					</ul>
+				</div>
+
+
+		<div id="logo"><a href=""><img src="./images/maseno2.png" width="250" height="80" /></a></div>
+
+	
+
+ 		<div class="headertop_desc">
+		
+				
+					<div class="account_desc">
+						<ul>
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="#">Resources</a></li>
+							<li><a href="#">Library</a></li>
+							
+						</ul>
+					</div>
+				<div class="clear"></div>
+		
+		
+     </header>
+
+
+
+<nav>
+	<p style="font-size: 18px;color: #000000">MASENO EDU-PRO</p>
+
+</nav>
+
+
+<section class="featured">
+	<div class="rslides_container">
+		<ul class="rslides" id="slider">
+			
+			<li><img src="images/slide5.png"/></li>
+			<li><img src="images/slide4.jpg"/></li>
+		</ul>
+		<br>
+	</div>
+
+</section>
+
+ 
+
+<section id="content">
+	<div class="zerogrid">
+
+		<div class="row">
+			<div class="main-content">
+
+				<div class="row">
+					<div class="sidebar col-2-3">
+							<section class="">
+							<div class="heading">Select Year</div>
+							<div class="content">
+						
+						<h4>Please select your year </h4>
+			
+					</div>
+						
+					</div>
+					<div class="sidebar col-1-3">
+					<h4>Semester</h4>
+						<div class="list-group">
+						  <a href="#" class="list-group-item active">Year 1 Semester 1 </a>
+						  <a href="#" class="list-group-item list-group-item-action">  Year 1 Semester 2</a>
+						  <a href="#" class="list-group-item list-group-item-action">  Year 2 Semester 1</a>
+						  <a href="#" class="list-group-item list-group-item-action">  Year 2 Semester 2</a>
+						  <a href="#" class="list-group-item list-group-item-action disabled">  Year 3 Semester 1</a>
+						</div>
+					</div>
+				</div>
+
+
+			<div class="row">
+					<div class="sidebar col-2-3">
+							<section class="">
+							<div class="heading">Select School</div>
+							<div class="content">
+						
+						<h4>Please select your school</h4>
+					
+					  <div class="radio">
+					    <label>
+					      <input type="radio" id="school1" name="chk" value="1" checked="checked"> Development Studies and IR
+					    </label>
+					   </div>
+
+					   <div class="radio">
+					    <label>
+					      <input type="radio" id="school2" name="chk" value="2"> Biological and Physical Sciences
+					    </label>
+					   </div>
+
+					    <div class="radio">
+					     <label>
+					      <input type="radio" id="school3" name="chk" value="3"> Mathematics, Statistics and Actuarial Science
+					    </label>
+					   
+					   </div>
+					
+					</div>
+
+
+						
+					</div>
+
+
+					<div class="sidebar col-1-3">
+
+						<div class="list-group">
+							<h4>Courses</h4>
+						  
+					<select id="describe">
+				    <option name="name" value="1">Select Course</option>
+				  	</select>
+
+				  	<script type="text/javascript">
+				  		
+				  		 var listA = [{name:'Peace and Security Studies', value:'Peace and Security Studies'}, {name:'International Relations and Diplomacy', value:'International Relations and Diplomacy'}, {name:'Political Science', value:'Political Science'}];
+
+						 var listB = [{name:'Department of Chemistry', value:'Department of Chemistry'}, {name:'Department of Zoology', value:'Department of Zoology'},{name:'Department of Botany', value:'Department of Botany'}];
+
+						 var listC = [{name:'Department of Pure Mathematics', value:'Department of Pure Mathematics'}, {name:'Department of Applied Mathematics', value:'Department of Applied Mathematics'},{name:'Department of Actuarial Science', value:'Department of Actuarial Science'}];
+
+						  $(document).ready( function() {
+						      $("input[name='chk']").on('change',function() {
+						          
+						          if($(this).is(':checked') && $(this).val() == '1')
+						          {
+						            $('#describe').empty()
+						            $.each(listA, function(index, value) {
+						             $('#describe').append('<option value="'+value.value+'">'+value.name+'</option>');
+						            });                  
+						          }
+						          else if($(this).is(':checked') && $(this).val() == '2')
+						          {
+						            $('#describe').empty()
+						            $.each(listB, function(index, value) {
+						             $('#describe').append('<option value="'+value.value+'">'+value.name+'</option>');
+						            }); 
+						          }
+
+						           else if($(this).is(':checked') && $(this).val() == '3')
+						          {
+						            $('#describe').empty()
+						            $.each(listC, function(index, value) {
+						             $('#describe').append('<option value="'+value.value+'">'+value.name+'</option>');
+						            }); 
+						          }
+						          else
+						          {
+						              
+						          }
+						              
+						    });
+						 });  
+						      
+   
+
+
+
+
+
+
+
+
+				  	</script>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<div>
+
+
+
+
+
+<footer>
+	<div class="zerogrid">
+		<div class="row">
+			<section class="col-1-3">
+				<div id="logo"><a href=""><img src="./images/maseno.png" width="150" height="150" style="margin-left: 80px" /></a></div>
+				<div class="content">
+                     <br><br>
+					
+				</div>
+			</section>
+			<section class="col-1-3">
+				<div class="heading">Our School</div>
+				<div class="content">
+					<ul class="custom-bullet">
+
+						<li><a href="#">Development Studies and IR</a></li>
+						<li><a href="#">Biological and Physical Sciences</a></li>
+						<li><a href="#">Statistics and Actuarial Science</a></li>
+						<li><a href="#">Business and Economics</a></li>
+						<li><a href="#">Development and Strategic Studies</a></li>
+						<li><a href="#">School of Graduate Studies</a></li>
+						
+					</ul>
+				</div>
+			</section>
+			<section class="col-1-3">
+				<div class="heading">Twitter Feeds</div>
+				<div class="content">
+						<section>
+							<img src="images/thumb5.jpg"/>
+							<p>Maseno University@edu_pro. Keep the good work with us.Check out http://www.maseno.ac.ke to find out.</p><br>
+						</section>
+						<hr>
+						<section>
+							<img src="images/thumb5.jpg"/>
+							
+							<p>Maseno University@edu_pro. We are proud to be part of an institution that invests in academic programmes.</p><br>
+						</section>
+						
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+  
+	<div id="copyright">
+	 <hr style="margin-bottom: 0px">
+	<i>Copyright © Maseno University. 2017.All Rights Reserved.</i>
+
+	<div class="nav_footer">
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Disclaimer</a></li>
+						
+					</ul>
+				</div>
+			
+	
+</div>
+</footer>
+
+	
+
+
+</body>
+</html>
